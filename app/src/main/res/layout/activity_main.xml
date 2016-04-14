@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kr.hs.emirim.sebin2519.mycalculator.MainActivity">
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_num1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:textSize="20sp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_num2"
+        android:layout_below="@+id/edit_num1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_plus"
+        android:id="@+id/but_plus"
+        android:layout_below="@+id/edit_num2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_minus"
+        android:id="@+id/but_minus"
+        android:layout_below="@+id/but_plus"
+        android:layout_alignLeft="@+id/but_plus"
+        android:layout_alignStart="@+id/but_plus"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_divide"
+        android:id="@+id/but_divide"
+        android:layout_below="@+id/but_minus"
+        android:layout_alignLeft="@+id/but_minus"
+        android:layout_alignStart="@+id/but_minus"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_multiply"
+        android:id="@+id/but_multiply"
+        android:layout_below="@+id/but_divide"
+        android:layout_alignLeft="@+id/but_divide"
+        android:layout_alignStart="@+id/but_divide"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_result"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="#9c1414"
+        android:textSize="30sp" />
+</RelativeLayout>
